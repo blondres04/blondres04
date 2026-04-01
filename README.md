@@ -11,11 +11,11 @@ I also mentor CS students at FIU through the Panther2Panther program, breaking d
 
 ### Flagship Projects
 
-**[Shield Claw](https://github.com/blondon1/shield-claw)** — Autonomous DevSecOps Verification Agent
+**[Shield Claw](https://github.com/blondres04/shield-claw)** — Autonomous DevSecOps Verification Agent
 
 An open-source, five-service pipeline that uses a local LLM to generate exploit hypotheses from code changes, then autonomously detonates them in ephemeral Docker sandboxes and only reports empirically verified vulnerabilities. Built with Python, Java 21/Spring Boot, React, Apache Kafka, PostgreSQL, and Docker Compose. Currently in active development, building dynamic application-layer sandboxing and a ground-truth validation suite.
 
-**[In Silico Neural Dynamics Simulator](https://github.com/blondon1/Procedural-Neuron-OpenGL)** — GPU-Accelerated Computational Neuroscience Engine
+**[In Silico Neural Dynamics Simulator](https://github.com/blondres04/Procedural-Neuron-OpenGL)** — GPU-Accelerated Computational Neuroscience Engine
 
 A 1,000-node neural network simulation built from scratch in C++20 and OpenGL. Implements Leaky Integrate-and-Fire physics with Euler integration, procedural graph topology via rejection sampling, O(N²) Euclidean synaptic wiring, and custom GLSL fragment shaders for organic membrane rendering. Designed as an in silico prototyping sandbox for computational neuroscience research.
 

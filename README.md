@@ -9,7 +9,7 @@ I’m **Bryan**, a Full Stack Engineer based in Miami, FL. Currently completing 
 ---
 
 **Some stuff I built:**
-- [Procedural Neural Morphology Simulator](https://github.com/blondon1/Procedural-Neuron-OpenGL) - A C++/OpenGL 2D biological neuron generator manipulating CPU-side procedural generation and GPU-side pixel obfuscation.
+- [InSilico-Neural-Dynamics](https://github.com/blondon1/InSilico-Neural-Dynamics) - A GPU-accelerated Leaky Integrate-and-Fire (LIF) network simulator built in C++20 and OpenGL. Designed as an in silico sandbox for visualizing computational neuroscience dynamics.  
 - [GPT-Hardware-Bridge](https://github.com/blondon1/GPT-Hardware-Bridge) - A voice and vision-enabled Raspberry Pi robot utilizing GPT-4o Vision, featuring a Mecanum-wheel chassis and custom C++ shared libraries for L298N motor control.
 
 ---

@@ -1,23 +1,22 @@
 # Bryan Londres
 
-**Computer Science Senior at Florida International University (May 2026)**
-CompTIA Security+ | AWS re:Invent All Builders Welcome Grant Awardee
+**AI + Cybersecurity Engineer** | CompTIA Security+ | Bachelor's, Computer Science (FIU) | Associate's, Computer Engineering (MDC)
 
-I build systems across the full abstraction stack, from GPU-level C++20 and OpenGL shader programming to distributed enterprise architectures with Spring Boot, Kafka, and Docker. My current work sits at the intersection of cybersecurity and AI, where I'm building open-source tooling to empirically verify LLM-generated security vulnerabilities.
+I build systems that sit at the intersection of AI and cybersecurity. My current focus is automated vulnerability verification, using LLMs, static analysis, and hardened container execution to determine whether security findings are exploitable or theoretical. I care about engineering discipline as much as output: clean module boundaries, deterministic pipelines, and sandboxing that doesn't cut corners.
 
-I also mentor CS students at FIU through the Panther2Panther program, breaking down low-level concepts like C++ memory management, multithreading, and systems design.
+I also work across the full abstraction stack, from GPU-level C++20 and OpenGL shader programming to enterprise CI/CD and cloud infrastructure.
 
 ---
 
 ### Flagship Projects
 
-**[Shield Claw](https://github.com/blondres04/shieldclaw)** — Autonomous DevSecOps Verification Agent
+**[ShieldClaw](https://github.com/blondres04/shieldclaw)** | LLM-Driven SAST Verification Engine
 
-An open-source, five-service pipeline that uses a local LLM to generate exploit hypotheses from code changes, then autonomously detonates them in ephemeral Docker sandboxes and only reports empirically verified vulnerabilities. Built with Python, Java 21/Spring Boot, React, Apache Kafka, PostgreSQL, and Docker Compose. Currently in active development, building dynamic application-layer sandboxing and a ground-truth validation suite.
+A Python CLI tool that turns Semgrep findings into evidence-backed true/false-positive verdicts. It asks an LLM to generate a targeted proof-of-concept exploit, detonates it inside a hardened ephemeral Docker sandbox (read-only filesystem, no network egress, seccomp, strict memory/PID limits), and synthesizes a deterministic verdict with a mandatory human approval gate. Supports swappable LLM backends (Claude, OpenAI, Ollama) via a Strategy-pattern provider interface, SQLite-backed scan resumability, and JSON/SARIF/Markdown reporting. Actively developed beyond v0.2.0.
 
-**[In Silico Neural Dynamics Simulator](https://github.com/blondres04/InSilico-Neural-Dynamics)** — GPU-Accelerated Computational Neuroscience Engine
+**[In Silico Neural Dynamics Simulator](https://github.com/blondon1/Procedural-Neuron-OpenGL)** | GPU-Accelerated Computational Neuroscience Engine
 
-A 1,000-node neural network simulation built from scratch in C++20 and OpenGL. Implements Leaky Integrate-and-Fire physics with Euler integration, procedural graph topology via rejection sampling, O(N²) Euclidean synaptic wiring, and custom GLSL fragment shaders for organic membrane rendering. Designed as an in silico prototyping sandbox for computational neuroscience research.
+A 1,000-node neural network simulation built from scratch in C++20 and OpenGL. Implements Leaky Integrate-and-Fire physics decoupled from the render loop via a fixed-step accumulator, procedural graph topology using rejection sampling for organic soma placement, O(N²) Euclidean synaptic wiring, and custom GLSL fragment shaders with SDF blending for membrane rendering. Designed as an interactive prototyping sandbox for observing emergent network dynamics.
 
 ---
 
@@ -25,22 +24,22 @@ A 1,000-node neural network simulation built from scratch in C++20 and OpenGL. I
 
 **Systems and Low-Level:** C++20, C, OpenGL/GLSL, GPU pipeline engineering, manual memory management, CMake
 
-**Enterprise and Full-Stack:** Java 21, Spring Boot, C#/.NET, React, TypeScript, PostgreSQL, Apache Kafka, REST APIs
+**AI and Security:** Python, LLM integration (Claude, OpenAI, Ollama), Docker container hardening, seccomp, Semgrep, CompTIA Security+
 
-**DevOps and Cloud:** Docker, Kubernetes, Terraform, AWS, Azure, GitHub Actions, Jenkins, Linux
+**Cloud and Infrastructure:** AWS, Azure DevOps, Kubernetes, Terraform, CI/CD, GitHub Actions, Jenkins, Linux, Docker
 
-**Security and AI:** CompTIA Security+, JWT/Spring Security, LLM integration (Ollama), Pydantic, PyTest
+**Data and Enterprise:** SQL (Oracle, PostgreSQL, MS SQL), RESTful APIs, C#/.NET, Power Apps, RPA, ETL concepts
 
-**Languages:** Python, Java, C++, C#, TypeScript, Go, SQL, Bash
+**Languages:** Python, Java, C++, C#, TypeScript, SQL, Bash
 
 ---
 
 ### Currently
 
-- Building Shield Claw's dynamic Docker-Compose-aware sandbox for application-layer exploit verification
-- Implementing inhibitory (GABAergic) neuron types in the neural simulator to stabilize network dynamics
-- Mentoring 6 CS students per semester on C++ memory management, OOD, and Linux systems
+- Extending ShieldClaw with richer observer tiers and broader SAST input support beyond Semgrep
+- Implementing inhibitory (GABAergic) neuron types in the neural simulator to stabilize network dynamics against hyper-synchronous firing
+- Completing a Mobile Applications Development College Credit Certificate at Miami Dade College (Fall 2026)
 
 ---
 
-<sub>US Citizen · English (Native) · Spanish (Native) · bryanlondres5@gmail.com · [LinkedIn](https://linkedin.com/in/bryanlondres)</sub>
+<sub>bryanlondres5@gmail.com · <a href="https://linkedin.com/in/bryanlondres">LinkedIn</a> · Miami, FL</sub>

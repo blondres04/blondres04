@@ -10,9 +10,9 @@ I also work across the full abstraction stack, from GPU-level C++20 and OpenGL s
 
 ### Flagship Projects
 
-**[ShieldClaw](https://github.com/blondres04/shieldclaw)** | LLM-Driven SAST Verification Engine
+**[ShieldClaw](https://github.com/blondres04/shieldclaw)** | Evidence-Backed SQL Injection Validation
 
-A Python CLI tool that turns Semgrep findings into evidence-backed true/false-positive verdicts. It asks an LLM to generate a targeted proof-of-concept exploit, detonates it inside a hardened ephemeral Docker sandbox (read-only filesystem, no network egress, seccomp, strict memory/PID limits), and synthesizes a deterministic verdict with a mandatory human approval gate. Supports swappable LLM backends (Claude, OpenAI, Ollama) via a Strategy-pattern provider interface, SQLite-backed scan resumability, and JSON/SARIF/Markdown reporting. Actively developed beyond v0.2.0.
+A Python CLI MVP that validates Semgrep `CWE-89` SQL injection findings against owned Docker Compose apps. It scores findings with an LLM, requires human approval before detonation, generates one approved proof-of-concept, runs it inside a hardened ephemeral Docker attacker container (read-only filesystem, blocked egress, seccomp, strict memory/PID limits), and only reports `TRUE_POSITIVE` when exit-code evidence is corroborated by Tier-2 observer evidence. Non-SQLi findings remain visible but are deferred by default. Supports OpenAI/Ollama providers, SQLite-backed scan resumability, and JSON/Markdown reports, with SARIF available as a secondary export.
 
 **[In Silico Neural Dynamics Simulator](https://github.com/blondon1/Procedural-Neuron-OpenGL)** | GPU-Accelerated Computational Neuroscience Engine
 
@@ -36,7 +36,7 @@ A 1,000-node neural network simulation built from scratch in C++20 and OpenGL. I
 
 ### Currently
 
-- Extending ShieldClaw with richer observer tiers and broader SAST input support beyond Semgrep
+- Tightening ShieldClaw's SQLi-only MVP validation path before broadening vulnerability coverage
 - Implementing inhibitory (GABAergic) neuron types in the neural simulator to stabilize network dynamics against hyper-synchronous firing
 - Completing a Mobile Applications Development College Credit Certificate at Miami Dade College (Fall 2026)
 

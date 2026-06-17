@@ -10,10 +10,6 @@ I also work across the full abstraction stack, from GPU-level C++20 and OpenGL s
 
 ### Flagship Projects
 
-**[ShieldClaw](https://github.com/blondres04/shieldclaw)** | LLM-Driven SAST Verification Engine
-
-A Python CLI tool that turns Semgrep findings into evidence-backed true/false-positive verdicts. It asks an LLM to generate a targeted proof-of-concept exploit, detonates it inside a hardened ephemeral Docker sandbox (read-only filesystem, no network egress, seccomp, strict memory/PID limits), and synthesizes a deterministic verdict with a mandatory human approval gate. Supports swappable LLM backends (Claude, OpenAI, Ollama) via a Strategy-pattern provider interface, SQLite-backed scan resumability, and JSON/SARIF/Markdown reporting. Actively developed beyond v0.2.0.
-
 **[In Silico Neural Dynamics Simulator](https://github.com/blondon1/Procedural-Neuron-OpenGL)** | GPU-Accelerated Computational Neuroscience Engine
 
 A 1,000-node neural network simulation built from scratch in C++20 and OpenGL. Implements Leaky Integrate-and-Fire physics decoupled from the render loop via a fixed-step accumulator, procedural graph topology using rejection sampling for organic soma placement, O(N²) Euclidean synaptic wiring, and custom GLSL fragment shaders with SDF blending for membrane rendering. Designed as an interactive prototyping sandbox for observing emergent network dynamics.
